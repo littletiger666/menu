@@ -1,0 +1,36 @@
+<div class="user-show">
+  <p>
+    <strong> Login Successfully! </strong>
+  </p>
+  <% if @user.avatar %>
+    <%= image_tag(@user.avatar, width: 200, height: 200) %>
+  <% else %>
+    <p>
+      <strong>Avatar:</strong> No avatar
+    </p>
+  <% end %>
+
+  <p>
+    <strong>Name:</strong> <%= @user.name %>
+  </p>
+
+  <p>
+    <strong>Provide:</strong> <%= @user.provide %>
+  </p>
+
+  <p>
+    <strong>Sex:</strong> <%= @user.sex %>
+  </p>
+
+  <p>
+    <strong>Country:</strong> <%= @user.country %>
+  </p>
+
+  <p>
+    <strong>Provice:</strong> <%= @user.provice %>
+  </p>
+
+  <p>
+    <strong>City:</strong> <%= @user.city %>
+  </p>
+</div>
